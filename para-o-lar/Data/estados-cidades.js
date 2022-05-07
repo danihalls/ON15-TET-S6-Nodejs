@@ -5732,3 +5732,19 @@ const estados = [
         ]
       }
     ]
+
+
+    function buscar(cidade){
+      const listarEstado = estados.filter(({sigla}) => sigla == cidade)
+      for (let i of listarEstado){
+        let municipio = i.cidades
+
+        for (let j of municipio){
+          console.log(j)
+        }
+      }
+
+  }
+
+buscar("CA")
+  
